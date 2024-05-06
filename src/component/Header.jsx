@@ -1,6 +1,9 @@
-import React from 'react'
+'use client';
+import React from 'react';
 import Link from 'next/link';
+import { signIn, useSession, signOut } from "next-auth/react"
 import Image from 'next/image';
+
 
 const Header = () => {
   return (
@@ -35,11 +38,11 @@ const Header = () => {
         />
 
 <button
-  
-  className='text-sm font-semibold text-blue-600'
->
-  Log In
-</button>
+            onClick={signIn}
+            className='text-sm font-semibold text-blue-500'
+          >
+            Log In
+          </button>
 
 
 
