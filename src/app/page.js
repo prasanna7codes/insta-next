@@ -1,12 +1,10 @@
-import React from 'react'
+import Feed from '@/components/Feed';
 
-const page = () => {
+export default function Home() {
   return (
-    <div className='text-red-600'>
-      hiiiiii
-
-    </div>
-  )
+   
+    <>
+      <Feed />
+    </>
+  );
 }
-
-export default page
